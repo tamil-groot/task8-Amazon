@@ -1,0 +1,306 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    /* display: flex; */
+}
+
+.nav1 {
+    background-color: #131921;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+}
+
+.inner1 {
+    width: 28%;
+}
+
+.inner1_1 {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.amazonlogo {
+    height: 5.5vh;
+    margin: 10px 10px 5px 10px;
+}
+
+.inner1_2 a {
+    margin: 5px;
+    padding: 10px 5px;
+}
+
+.inner1_2 a:hover,
+.box:hover {
+    border: 1px solid white;
+}
+
+.inner1_2 {
+    display: flex;
+    color: white;
+    width: 60%;
+    align-items: center;
+
+}
+
+.loction {
+    align-self: center;
+}
+
+.inner2 {
+    width: 39%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.search {
+    height: 7vh;
+}
+
+.drop {
+    width: 3.8vw;
+    font-size: 12px;
+    background-color: rgb(240, 226, 226);
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    cursor: pointer;
+
+}
+
+.searchbar {
+    width: 32vw;
+    border: none;
+}
+
+#searchicon {
+    border: none;
+    font-size: large;
+    border-radius: 10px;
+}
+
+.searchbar:focus {
+    outline-style: none;
+}
+
+.search:hover {
+    outline: 3px solid orange;
+    border-radius: 5px;
+}
+
+.inner3 {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inner3_1 {
+    display: flex;
+    align-items: center;
+    width: 16%;
+    padding: 7px 70px 7px 7px;
+}
+
+.flag {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+
+.dd {
+    width: 1vw;
+    font-size: 12px;
+    background-color: #131921;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.dd option {
+    background-color: white;
+    color: #131921;
+}
+
+.pa1 {
+    font-size: small;
+}
+
+.inner3_2 {
+    width: 30%;
+    color: white;
+    display: flex;
+    padding: 7px 3px;
+}
+
+.arrow {
+    align-self: end;
+}
+
+.inner3_3 {
+    color: white;
+    padding: 8px;
+}
+
+.inner3_4 {
+    width: 20%;
+    display: flex;
+    padding: 8px;
+}
+
+.inner3_4 h4 {
+    align-self: end;
+}
+
+.inner3_4 img {
+    width: 2rem;
+    height: 2rem;
+    color: white;
+    font-weight: bolder;
+}
+
+#serchicon {
+    width: 2.7vw;
+    font-size: large;
+}
+
+.search {
+    display: flex;
+}
+
+.inner3_1:hover,
+.inner3_2:hover,
+.inner3_3:hover,
+.inner3_4:hover {
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.nav2 {
+    background-color: #232f3e;
+    height: 6.5vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav2_1 {
+    width: 66%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-items: space-evenly;
+    background-color: olive;
+}
+
+.nav2_1 li {
+    list-style: none;
+    display: inline-block;
+}
+
+.burger {
+    display: flex;
+    padding-left: 7px;
+    width: 7%;
+}
+
+.burger img {
+    height: 32px;
+    width: 28px;
+    /* padding: 16px; */
+    display: flex;
+    cursor: pointer;
+    /* padding: 2px; */
+
+}
+
+.dropbtn {
+    /* padding: 16px; */
+    /* font-size: 16px; */
+    border: none;
+    cursor: pointer;
+    background-color: #232f3e;
+    color: white;
+    /* display: flex; */
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.dropbtn img {
+    height: 25px;
+    width: 20px;
+    /* padding: 16px; */
+    display: flex;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.collection {
+    width: 94%;
+}
+
+.collection a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-items: center;
+    padding: 7px;
+    font-size: small;
+    font-weight: 550;
+}
+
+/* this content maybe use so don't delete */
+/* .dropdown-content a:hover {
+  background-color: #f1f1f1;
+} */
+
+/* .burger:hover .dropdown-content {
+    display: block;
+    } */
+.burger:hover {
+    border: 1px solid white;
+}
+
+.nav2_1 a:hover {
+    border: 1px solid white;
+    transition: 0.3s;
+}
+
+.nav2_2{
+    background-color: cadetblue;
+    width:34% ;
+}
+
+@media screen and (max-width:1024) {
+    .nav1,{
+        width: 100%;
+        font-size: small;
+    }
+    .nav2{
+        width: 100%;
+        font-size: small;
+    }
+}
