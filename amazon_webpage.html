@@ -5,32 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AMAZON</title>
-  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style1.css">
   <link href='https://cdn.boxicons.com/3.0.4/fonts/basic/boxicons.min.css' rel='stylesheet'>
   <link href='https://cdn.boxicons.com/3.0.4/fonts/basic/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <header class="header">
-    <div class="nav1">
-      <div style="display: flex;" class="inner1">
-        <div class="inner1_1">
+  <header>
+    <nav class="nav1">
+      <div class="sec1">
+        <section class="inner1_1">
           <a href="" class="box">
             <img src="./assets/amazanlogo-removebg-preview.png" alt="" srcset="" class="amazonlogo">
           </a>
-        </div>
-        <div class="inner1_2">
-          <a href="" style="display: flex; text-decoration: none;color: white;">
-            <div class="loction"><i class='bxrd  bx-location' style="color: white;font-size: large;"></i> </div>
+        </section>
+        <section class="inner1_2">
+          <a href="" style="display: flex; text-decoration: none;color: white;padding: max(5px,3%);">
+            <div class="loction"><i class='bxrd  bx-location' style="color: white;font-size:2vmax ;"></i> </div>
             <div>
-              <p style="font-size: small;color: rgb(216, 214, 214);">Delivering to Mumbai 400001</p>
-              <h4 style="font-size: medium;">Update location</h4>
+              <p style="font-size: clamp(1vw,0.5vh,1vw);color: rgb(216, 214, 214);margin: 0px;">Delivering to Mumbai
+                400001</p>
+              <h4 style="font-size:clamp(1vw,2.2vh,1vw) ;display: inline;">Update location</h4>
             </div>
           </a>
-        </div>
+        </section>
       </div>
-      <div class="inner2">
+      <div class="sec2">
         <div class="search">
           <select id="fruits" name="selected_fruit" aria-placeholder="all" class="drop">
             <option class="" value="" selected hidden> ALL</option>
@@ -49,18 +51,18 @@
           </select>
           <input type="text" placeholder="Search Amazon.in" name="search" class="searchbar">
           <button type="submit"
-            style="background-color: rgb(255, 200, 80);border: none;border-radius: 0px 5px 5px 0px;"> <i id="serchicon"
-              class='bxr  bx-search-alt' style='color:#0f0f0f; font-size: large'></i> </button>
+            style="background-color: rgb(255, 200, 80);border: none;border-radius: 0px 5px 5px 0px;     height: 6.5vh;">
+            <i id="serchicon" class='bxr  bx-search-alt' style='color:#0f0f0f; font-size: large'></i> </button>
         </div>
       </div>
-      <div class="inner3">
+      <div class="sec3">
         <div class="inner3_1">
           <img src="./assets/world.png" alt="alt" class="flag"><span
-            style="color: white; font-size: small; margin: 0px; padding: 4px;">EN</span>
+            style="color: white; font-size: 1.2vw; margin: 0px; padding: 4px;">EN</span>
           <select id="fruits" name="selected_fruit" aria-placeholder="all" class="dd">
             <option class="" value="" selected hidden></option>
-            <option value="banana">Books</option>
-            <option value="orange">Car</option>
+            <option value="banana">Tamil</option>
+            <option value="orange"> English</option>
             <option value="grape">furniture</option>
             <option value="banana">Gift</option>
             <option value="orange">Bike</option>
@@ -75,8 +77,9 @@
         </div>
         <div class="inner3_2">
           <div>
-            <p class="pa1">Hello,<span>sign in</span></p>
-            <h4>Accounts&Lists</h4>
+            <p style="font-size: clamp(1vw,0.9vw,2vw);color: rgb(216, 214, 214);margin: 0px;">Hello,<span>sign in</span>
+            </p>
+            <h4 style="font-size:clamp(1vw,5vh,1.2vw) ;display: inline;color: white ;">Accounts&Lists</h4>
           </div>
           <div class="arrow">
             <select id="fruits" name="selected_fruit" aria-placeholder="all" class="dd">
@@ -97,35 +100,36 @@
           </div>
         </div>
         <div class="inner3_3">
-          <p class="pa1">Returns</p>
-          <h4>&Orders</h4>
+          <p style="font-size: clamp(1vw,0.9vw,2vw);color: rgb(216, 214, 214);margin: 0px;">Returns
+            <span
+              style="font-size:clamp(1vw,5vh,1.2vw) ;display: inline; color: white;font-weight: bold;">&Orders</span>
+          </p>
         </div>
         <div class="inner3_4">
           <img src="./assets/online-shopping.png" alt="" srcset="">
-          <h4 style="color: white;">Cart</h4>
+          <h4 style="color: white;font-size:clamp(1vw,5vh,1.2vw) ;display: inline;">Cart</h4>
         </div>
-
       </div>
-    </div>
-    <div class="nav2">
-      <div class="nav2_1">
-        <div class="burger">
-          <img src="./assets/menu.png" alt="" srcset="">
-             <button class="dropbtn"> All</button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-               <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a> 
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
+    </nav>
+    <nav class="nav2">
+      <!-- <div class="nav2_1"> -->
+      <div class="burger">
+        <img src="./assets/menu.png" alt="" srcset="">
+        <button class="dropbtn"> All</button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
         </div>
-        <div class="collection">
-          <ul>
+      </div>
+      <div class="collection">
+        <ul>
           <li><a href="">Fresh</a></li>
           <li><a href="">MX Player</a></li>
           <li><a href="">Sell</a></li>
@@ -134,34 +138,43 @@
           <li><a href="">Today's Deals</a></li>
           <li><a href="">Customer Service</a></li>
           <li><a href="">New releases</a></li>
-                      <li> <a href="" style="padding-right: 1px;">Prime</a></li>
-            <select id="fruits" name="selected_fruit" aria-placeholder="all" class="dd" style="background-color: #232f3e;">
-              <option class="" value="" selected hidden></option>
-              <option value="banana">Books</option>
-              <option value="orange">Car</option>
-              <option value="grape">furniture</option>
-              <option value="banana">Gift</option>
-              <option value="orange">Bike</option>
-              <option value="grape">Dress</option>
-              <option value="banana">Slipers</option>
-              <option value="orange">Shoes</option>
-              <option value="grape">Watch</option>
-              <option value="banana">TV</option>
-              <option value="orange">Laptop</option>
-              <option value="grape">Mobile</option>
-            </select>
-          <li><a href="">Electronics</a></li>
+          <li> <a href="" style="padding-right: 1px;">Prime</a></li>
+          <select id="fruits" name="selected_fruit" aria-placeholder="all" class="dd"
+            style="background-color: #232f3e;">
+            <option class="" value="" selected hidden></option>
+            <option value="banana">Books</option>
+            <option value="orange">Car</option>
+            <option value="grape">furniture</option>
+            <option value="banana">Gift</option>
+            <option value="orange">Bike</option>
+            <option value="grape">Dress</option>
+            <option value="banana">Slipers</option>
+            <option value="orange">Shoes</option>
+            <option value="grape">Watch</option>
+            <option value="banana">TV</option>
+            <option value="orange">Laptop</option>
+            <option value="grape">Mobile</option>
+          </select>
+          <li><a href="">Amazon Pay</a></li>
+          <li><a href="">Fahsion</a></li>
+          <li><a href="">Home&Kitchen</a></li>
+          <li><a href="">Books</a></li>
+          <li><a href="">Computers</a></li>
         </ul>
-        </div>
       </div>
-      <div class="nav2_2">
-        <div class="nav2_2"></div>
-        <div></div>
-        <div></div>
       </div>
-    </div>
+    </nav>
   </header>
+  <main>
+    <div class="m1">
+      <img src="./assets/bgad.jpg" alt="" srcset="">
+    </div>
+    <div class="m2">
 
+    </div>
+  </main>
+
+  
 </body>
 
 </html>
