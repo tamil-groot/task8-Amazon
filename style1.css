@@ -3,15 +3,25 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    /* width: 100%; */
+}
+
+body {
+    background-color: rgb(241, 227, 227);
+    padding-top: 9vh;
+
 }
 
 .nav1 {
     background-color: #131921;
-    width: 100%;
+    /* width: 100%; */
     height: 9vh;
     display: flex;
     flex-wrap: nowrap;
-    position: sticky;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
 
 .sec1 {
@@ -118,7 +128,7 @@
 .inner3_1 {
     display: flex;
     align-items: center;
-    width: 20vw;    
+    width: 20vw;
     margin: 5px 0px;
 
 }
@@ -172,7 +182,7 @@
     align-items: center;
     width: 20vw;
     padding-left: 7px;
-        margin: 5px 0px;
+    margin: 5px 0px;
 
 }
 
@@ -181,7 +191,7 @@
     display: flex;
     padding: 8px;
     align-items: center;
-        margin: 5px 0px;
+    margin: 5px 0px;
 
 }
 
@@ -213,8 +223,8 @@
     cursor: pointer;
 }
 
-.nav2{
-     background-color: #232f3e;
+.nav2 {
+    background-color: #232f3e;
     height: 6.5vh;
     display: flex;
     align-items: center;
@@ -245,7 +255,7 @@
     background-color: #232f3e;
     color: white;
     font-weight: bold;
-    font-size: clamp(1.2vw,1.5vh,1vw);
+    font-size: clamp(1.2vw, 1.5vh, 1vw);
 }
 
 .dropbtn img {
@@ -275,16 +285,18 @@
     display: flex;
     margin-left: 1vh;
 }
-.collection ul{
-        display: flex;
+
+.collection ul {
+    display: flex;
 }
+
 .collection a {
     text-decoration: none;
     color: white;
     display: flex;
     justify-items: center;
     padding: 1.2vh;
-    font-size: clamp(1vw,0.5vh,1vw);
+    font-size: clamp(1vw, 0.5vh, 1vw);
 }
 
 /* this content maybe use so don't delete */
@@ -306,15 +318,964 @@
     transition: 0.3s;
 }
 
-.m1 img{
-    width: 100%;  
-    height: 70vh;
+.m1 img {
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    z-index: -1;
+    background-attachment: fixed;
+    margin-top: -40vh;
+
+}
+
+.m2 {
+    top: 40vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 1rem;
+    margin-top: 40vh;
+}
+
+
+.card {
+    background-color: white;
+    border: 2px solid beige;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#bsp {
+    width: 8vw;
+    height: 23vh;
+}
+
+#bsp1 {
+    width: vw;
+    height: 23vh;
+}
+
+#bsp2 {
+    width: 5vw;
+    height: 23vh;
+}
+
+.h1top {
+    width: 100%;
+    padding: 1rem 0rem;
+}
+
+.card1 {
+    width: 50%;
+    margin: 1rem 0rem;
+
+}
+
+.card1 img {
+    width: 90%;
+    height: 15vh;
+    cursor: pointer;
+}
+
+.card1 p {
+    font-size: small;
+    color: rgb(41, 38, 38);
+}
+
+.c-bottom {
+    font-size: small;
+}
+
+.c-bottom a {
+    color: rgb(85, 85, 250);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.c-bottom a:hover {
+    opacity: 0.7;
+}
+
+.card11 {
+    display: none;
+}
+
+
+.m3 {
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+
+
+}
+
+.m3-1 {
+    display: flex;
+}
+
+.m3-1 a {
+    text-decoration: none;
+    color: rgb(37, 37, 236);
+}
+
+.m3-2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    padding: 1rem 0rem;
+}
+
+.m3-2 img {
+    width: 13vw;
+    height: 24vh;
+}
+
+.m4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 1rem;
+}
+
+.mrp {
+    font-size: small;
+    color: rgb(156, 143, 143);
+}
+
+.card1_1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.card1_2 p {
+    font-size: small;
+    font-weight: lighter;
+    color: rgb(71, 67, 67);
+}
+
+.card1_3 img {
+    border: 2px solid rgb(156, 143, 143);
+    border-radius: 5px;
+    padding: 1vh;
+    width: 4vw;
+    height: 9vh;
+}
+
+.m3land {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    padding: 1rem 0rem;
+}
+
+.m3land img {
+    width: 10vw;
+    height: 24vh;
+}
+
+
+.m7 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main7 {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    padding: 2rem;
+}
+
+.m7_1 img {
+    width: 15vw;
+    height: auto;
+    display: flex;
+    justify-self: center;
+}
+
+.m7_2 {
+    align-items: center;
+    padding-top: 5vh;
+}
+
+.star-rating {
+    font-size: 5vh;
+    font-weight: bold;
+    color: gold;
+}
+
+.star-rating::after {
+    content: "☆";
+    color: lightgray;
     position: absolute;
 }
-.m2{
-    position: relative;
-    background-color:;
-    /* width: 50%; */
-    height: 50vh;
-    top: 50vh;
+
+.tick {
+    color: rgb(252, 83, 4);
+    font-size: medium;
+}
+
+.text {
+    color: blue;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.sn {
+    background-color: orange;
+    border-radius: 15px;
+    padding: 1vh 2vh;
+    border: none;
+}
+
+.m8 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 1rem;
+}
+
+#bsp3 {
+    width: 8vw;
+    height: 23vh;
+}
+
+.m_10 {
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+
+}
+
+.m10 {
+    
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+video {
+    height: 43vh;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 1rem;
+}
+
+.images {
+    border: 1px solid gainsboro;
+    padding: 1rem;
+}
+
+.images1 {
+    border: 1px solid gainsboro;
+    padding: 1rem;
+    margin-left: 5px;
+}
+
+.images img {
+    width: 10vw;
+    height: 22vh;
+    display: flex;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+
+.images1 img {
+    width: 10vw;
+    height: 22vh;
+    display: flex;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+
+.precent {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.precent button {
+    background-color: rgb(190, 2, 65);
+    font-size: small;
+    color: white;
+    font-weight: bold;
+    height: 1.7rem;
+    width: 4rem;
+    margin-right: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.m13 {
+    background-color: white;
+    padding: 2rem 3rem;
+}
+
+.cards1 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-left: 1rem;
+}
+
+.precent1 button {
+    background-color: rgb(221, 72, 3);
+    font-size: 1.8vh;
+    color: white;
+    font-weight: bold;
+    padding: 6px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.m3-21 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 20px;
+    padding: 1rem 0rem;
+}
+
+.back {
+    width: 100%;
+    background-color: #26364b;
+    color: white;
+    padding: 1rem;
+    border: none;
+}
+
+.back:hover {
+    background-color: #334155;
+    cursor: pointer;
+}
+
+.foot1 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 3rem;
+    background-color: #232F3E;
+    color: white;
+}
+
+.foot1 h4 {
+    margin-bottom: 8px;
+}
+
+.foot1 li {
+    list-style: none;
+    line-height: 1.8rem;
+}
+
+.foot1 a {
+    text-decoration: none;
+    color: rgb(221, 218, 218);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.foot1 a:hover {
+    border-bottom: 1px solid white;
+}
+
+.foot2 {
+    display: flex;
+    justify-content: center;
+    background-color: #232F3E;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
+
+}
+
+.foot3 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 3rem 0rem 2rem 0rem;
+    background-color: rgb(19, 26, 34);
+    color: white;
+}
+
+.subfoot3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.subfoot3 h4 {
+    margin-bottom: 8px;
+}
+
+.subfoot3 li {
+    list-style: none;
+}
+
+.subfoot3 a {
+    text-decoration: none;
+    color: rgb(221, 218, 218);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.subfoot3 span:hover {
+    border-bottom: 1px solid white;
+}
+
+.foot4 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: rgb(19, 26, 34);
+    color: white;
+}
+
+.subfoot1 {
+    display: flex;
+    gap: 20px;
+    color: rgb(221, 221, 221);
+    font-size: small;
+}
+
+.foot5 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: rgb(19, 26, 34);
+    color: rgb(221, 221, 221);
+    font-size: 2vh;
+    padding-bottom: 2rem;
+}
+
+
+@media (min-width:578px) and (max-width: 1024px) {
+
+    .m2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card11 {
+        display: block;
+    }
+
+    .tp {
+        width: 70vw;
+        font-size: clamp(1rem, 16px, 2rem);
+    }
+
+    .m4 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #m4c4 {
+        display: none;
+    }
+
+    .card1_3 img {
+        width: 5vw;
+        height: 9vw;
+    }
+
+    #bsp {
+        width: 8vw;
+        height: 23vh;
+        display: flex;
+        text-align: center;
+        justify-self: center;
+    }
+
+    #bsp1 {
+        width: 10vw;
+        height: 23vh;
+        display: flex;
+        text-align: center;
+        justify-self: center;
+    }
+
+    #bsp2 {
+        width: 8vw;
+        height: 23vh;
+        display: flex;
+        text-align: center;
+        justify-self: center;
+    }
+
+    #bsp3 {
+        width: 8vw;
+        height: 23vh;
+        display: flex;
+        text-align: center;
+        justify-self: center;
+    }
+
+    .m7_1 img {
+        width: 23vw;
+        height: 32vh;
+    }
+
+    .m8 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 0px;
+    }
+
+    .m10 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr 2fr);
+    }
+
+    video {
+        width: 30vw !important;
+        height: 40vh;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 0px;
+    }
+
+    .images {
+        width: 20vw;
+        border: 1px solid gainsboro;
+        padding: 1rem;
+        margin: 5px;
+        height: auto;
+    }
+
+    .images1 {
+        border: 1px solid gainsboro;
+        padding: none;
+        margin: 5px;
+        width: 20vw;
+    }
+
+    .images img {
+        width: 15vw;
+        height: 22 vh;
+
+    }
+
+    .images1 img {
+        width: 15vw;
+        height: 22vh;
+
+    }
+
+    .m4c4 {
+        display: block;
+    }
+
+    .m3-21 {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .foot1 {
+        padding: 1rem;
+    }
+
+    .foot1 li {
+        list-style: none;
+        line-height: 2rem;
+    }
+
+    .foot1 a {
+        font-size: small;
+    }
+
+    .eng {
+        margin-right: 0.6rem !important;
+        font-size: small !important;
+    }
+
+    .globe {
+        width: 2vh !important;
+    }
+
+    #sup2 {
+        padding: 4px 4px !important;
+    }
+
+    #en {
+        width: 16vh !important;
+        padding: 2px;
+    }
+
+    #logo {
+        width: 10vw;
+        height: 5vh;
+    }
+
+    .foot3 {
+        padding: 1rem;
+    }
+
+    .subfoot3 {
+        display: grid;
+        grid-template-columns: repeat(4, 18%);
+        gap: 5px;
+    }
+
+    .subfoot3 li {
+        list-style: none;
+    }
+
+    .subfoot3 a {
+        font-size: small;
+    }
+
+    .subfoot1 {
+        font-size: small;
+    }
+}
+
+@media (min-width:580px) and (max-width:1000px) {
+    .m13 {
+        padding: 2rem 1rem;
+    }
+
+    .cards1 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-left: 1rem;
+    }
+
+    #en {
+        width: 16vh !important;
+        padding: 2px !important;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    /* .inner1_1 {
+        width: 43%;
+    }
+
+    .nav1 {
+        width: 77%;
+    }
+
+    .sec1 {
+        width: 30vmax;
+    }
+
+    .inner1_2 {
+        width: 10vmax;
+    }
+
+    .inner1_2 p {
+        font-size: 2vw !important;
+    }
+
+    .inner1_2 h4 {
+        font-size: 1.5vw !important;
+        display: inline;
+    }
+
+    .box {
+        padding: 1px 3px;
+        margin: 4px;
+    }
+
+    .sec2 {
+        width: 20vmax;
+    }
+
+    .searchbar {
+        width: 15vw;
+    } */
+
+    .m2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card11 {
+        display: none;
+    }
+
+    .m3-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .m3-2 img {
+        width: 35vw !important;
+    }
+
+    .tp {
+        width: 50vw;
+        font-size: x-small;
+    }
+
+    .m3-1 a {
+        font-size: small;
+    }
+
+    .m4 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card1_1 img {
+        width: 35vw;
+        height: 25vh;
+    }
+
+    .m5_8 {
+        display: none;
+    }
+
+    .card1_3 img {
+        width: 15vw;
+    }
+
+    .card1_2 {
+        font-size: x-small;
+    }
+
+    .m3land {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .m3land img {
+        width: 20vw;
+        height: 24vh;
+    }
+
+    /* #bsp1 {
+        width: 19vw;
+        height: auto !important;
+        display: flex;
+        text-align: center;
+        justify-self: center;
+    } */
+    #bsp {
+        width: 19vw;
+        height: 23vh;
+        display: flex;
+        text-align: center;
+        justify-self: center;
+    }
+
+    #bsp1 {
+        width: 18vw;
+        height: 23vh;
+        display: flex;
+        text-align: center;
+        justify-self: center;
+    }
+
+    #bsp2 {
+        width: 15vw;
+        height: 23vh;
+        display: flex;
+        text-align: center;
+        justify-self: center;
+    }
+
+    #bsp3 {
+        width: 15vw;
+        height: 23vh;
+        display: flex;
+        text-align: center;
+        justify-self: center;
+    }
+
+    .main7 {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .m7_1 img {
+        width: 35vw;
+        height: 25vh;
+    }
+
+    .m7_2 {
+        font-size: x-small;
+        padding: 0.5rem 1rem;
+    }
+
+    .m7_2 h3 {
+        font-size: medium !important;
+    }
+
+    .star-rating {
+        font-size: medium;
+    }
+
+    .m8 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .m_10 {
+        margin: 0px;
+    }
+
+    .m10 {
+        display: block;
+    }
+
+    .m10 video {
+        width: 100%;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 0px;
+    }
+
+    .images {
+        width: 42vw;
+        border: 1px solid gainsboro;
+        padding: 1rem;
+        margin: 5px;
+    }
+
+    .images1 {
+        border: 1px solid gainsboro;
+        padding: 1rem;
+        margin: 5px;
+        width: 40vw;
+
+    }
+
+    .images img {
+        width: 25vw;
+        height: 22vh;
+
+    }
+
+    .images1 img {
+        width: 25vw;
+        height: 22vh;
+
+    }
+
+    .m3-21 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .m3-21 img {
+        width: 15vw !important;
+    }
+
+    .m13 {
+        padding: 2rem 1rem;
+    }
+
+    .cards1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 1rem;
+    }
+
+    .foot1 {
+        padding: 15px;
+        gap: 5px;
+    }
+
+    .foot1 h4 {
+        font-size: x-small;
+    }
+
+    .foot1 li {
+        list-style: none;
+        line-height: 0.4rem;
+    }
+
+    .foot1 a {
+        font-size: 2vw;
+    }
+
+    .eng {
+        margin-right: 0.6rem !important;
+        font-size: small !important;
+    }
+
+    .globe {
+        width: 2vh !important;
+    }
+
+    .foot2 {
+        padding: 10px;
+    }
+
+    #sup2 {
+        padding: 1.1vw 0vw !important;
+        width: 20vw !important;
+    }
+
+    #en {
+        width: 25vw !important;
+    }
+
+    #logo {
+        margin-right: 1rem !important;
+        width: 25vw;
+        height: 5vh;
+    }
+
+    #flag {
+        width: 6vw;
+        height: 4vh;
+    }
+
+    #in {
+        font-size: small !important;
+    }
+
+    .foot3 {
+        padding: 1rem;
+    }
+
+    .subfoot3 {
+        display: grid;
+        grid-template-columns: repeat(4, 8%);
+        gap: 30px;
+    }
+
+    .subfoot3 li {
+        list-style: none;
+    }
+
+    .subfoot3 a {
+        font-size: 2vw;
+    }
+
+    #pre {
+        margin-left: -30px;
+    }
+
+    #pre1 {
+        margin-left: -10px;
+    }
+
+    .subfoot1 {
+        font-size: 2.6vw;
+        gap: 7px;
+    }
+
+    .foot5 {
+        font-size: 2.6vw;
+    }
 }
